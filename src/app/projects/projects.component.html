@@ -1,0 +1,40 @@
+<div class="container-lg">
+    <div class="card my-3">
+        <div class="card-header">
+            Featured
+        </div>
+        <div class="card-body">
+            <div class="card-deck">
+                <div class="card my-2 mx-auto" *ngFor="let card of cardsFeatured">
+                    <img class="card-img-top" src="{{ card.imgSrc }}" alt="Terminal Image">
+                    <div class="card-body">
+                        <h5>{{ card.imgHd }}</h5>
+                        <p class="card-text">{{ card.imgTxt }}</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="{{ card.imgLn }}" target="_blank" alt="Link to GitHub">Link to GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card my-3">
+        <div class="card-header">
+            Projects
+        </div>
+        <div class="card-body">
+            <div class="card-deck">
+                <div class="card my-2 mx-auto" style="width: 18rem;" *ngFor="let card of cardsAll">
+                    <img class="card-img-top" src="{{ card.imgSrc }}" alt="Terminal Image">
+                    <div class="card-body">
+                        <h5>{{ card.imgHd }}</h5>
+                        <p class="card-text">{{ card.imgTxt }}</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="{{ card.imgLn }}" target="_blank" alt="Link to GitHub">Link to GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
